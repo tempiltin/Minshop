@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Minshop
+    </title>
+    <style>
+      html,
+      body {
+        position: relative;
+        /* height: 100%; */
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        /* font-size: 14px; */
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+       
+      }
+      .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    transition-property: transform;
+}
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        /* width: 100%;
+        height: 100%; */
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+    <!-- starting header -->
+    <!-- ======================================================================================================== -->
+  <header>
+    <div class="header_top d-flex align-center">
+      <div class="container ">
+          <div class="row justify-between ">
+              <div class="col-12 col-xl-4 col-md-4 col-sm-12">
+                  <h2>наш номер: +998907417839</h2>
+              </div>
+              <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                  <div class="search d-flex justify-content-between  ">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Rus
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">uzbek</a></li>
+                          <li><a class="dropdown-item" href="#">english</a></li>
+                          <li><a class="dropdown-item" href="#">Arabik</a></li>
+                        </ul>
+                      </div>
+                      
+                      <h3 ><i class="fa fa-user" aria-hidden="true"></i> мой акаунт</h3>
+                      <a href="https://ro.pinterest.com/Frenzy_Style/mens-fashion/"><i class="fa fa-search" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+        </div>
+    <div class="header_top_2">
+        <div class="container  ">
+            <div class="row justify-content-center ">
+              <div class="col-12 col-xl-9 col-md-12 col-sm-12 justify-content-center ">
+                 <h1 class=" d-flex d-xl-none d-lg-none d-md-flex d-sm-flex ">Mens Shop</h1>
+              </div>
+                <div class="order_top col-12 col-xl-9 col-md-12 col-lg-9 col-sm-12">
+                 
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                        <div class="container-fluid">   
+                            <a class="navbar-brand d-xl-inline d-lg-inline d-md-none d-sm-none d-xs-none d-none" href="#">Mens Shop</a>
+                            <a class="navbar-brand  d-xl-none d-lg-none d-md-inline" href="#!">Menu</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                           
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./chouse.html">Ассортимент</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./product.html">Что жарко?</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Скидки</a>
+                              </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </nav>
+            </div>
+                <div class=" col-12 col-xl-3 col-lg-3 col-md-7 col-sm-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ваша карта
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="shop d-flex justify-between align-center">
+                                    <p><i class="fa fa-shopping-bag " aria-hidden="true"></i></p> 
+                                  <h2  >     0 покупок  |  $ 0</h2>
+                                   
+                                  
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                       
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="header_siliedr d-lg-inline d-none d-md-none d-sm-none">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/index.png" class="d-block w-100" alt="png">
+                <div class="carousel-caption d-none d-md-block ">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-7">
+                       <h5 >MENS
+                         COLLECTION</h5>
+                         <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus illum eligendi, maxime animi id soluta atque quasi blanditiis! Commodi tenetur aliquid suscipit laudantium velit voluptate qui obcaecati, ullam perspiciatis consectetur, odit asperiores aut dolorum possimus!</p>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/index.png" class="d-block w-100" alt="png">
+                <div class="carousel-caption d-none d-md-block  ">
+                 <div class="container">
+                  <div class="row">
+                    <div class="col-7">
+                     <h5 >MENS
+                       COLLECTION</h5>
+                       <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                       <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus illum eligendi, maxime animi id soluta atque quasi blanditiis! Commodi tenetur aliquid suscipit laudantium velit voluptate qui obcaecati, ullam perspiciatis consectetur, odit asperiores aut dolorum possimus!</p>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <img src="./images/index.png" class="d-block w-100" alt="png">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-7">
+                       <h5 >MENS
+                         COLLECTION</h5>
+                         <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus illum eligendi, maxime animi id soluta atque quasi blanditiis! Commodi tenetur aliquid suscipit laudantium velit voluptate qui obcaecati, ullam perspiciatis consectetur, odit asperiores aut dolorum possimus!</p>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+            </button>
+          </div>
+    </div>
+      
+    <div class="header_bottom">
+      <div class="container">
+        <div class="row justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-center ">
+          <div class="col-12  col-lg-2 col-md-12 col-sm-12 align-center">
+            <form action="">
+              <input type="text" placeholder="Ваш email">
+            </form>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12  ">
+            
+           <div class="icon d-flex justify-content-between align-center">
+            <h2 class="d-xl-inline d-lg-inline d-md-inline d-sm-inline ">Наши соц сети</h2>
+            <div class="aaa d-flex justify-content-center">
+              <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#!"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- starting main -->
+  <main class="d-none d-xl-inline d-lg-inline d-md-inline d-sm-none ">
+    <div class="container">
+      <div class="row m_b pbtm justify-center">
+        <div class="col-12 col-xl-5 col-md-5 col-sm-10 ">
+          <img src="./images/col-5.png" alt="png">
+        </div>
+        <div class="col-12 col-xl-3 col-md-3 col-sm-10 ">
+          <img src="./images/col-3.png" alt="png">
+          <img class="yarim" src="./images/col-35.png" alt="png">
+        </div>
+        <div class="col-12 col-xl-4 col-md-4 col-sm-10">
+          <img src="./images/col-4.png" alt="png">
+        </div>
+      </div>
+    </div>
+  </main>
+  <section>
+   <div class="section_top">
+    <div class="container">
+      <div class="row justify-between align-center">
+        <div class="col-6">
+
+          <div class="list-group active" id="list-tab" role="tablist">
+
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+
+            <a class="list-group-item list-group-item-action d-none d-xl-inline d-lg-inline d-md-inline d-sm-none" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+
+            <a class="list-group-item list-group-item-action d-none d-xl-inline d-lg-inline d-md-inline d-sm-none" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+
+            <a class="list-group-item list-group-item-action d-none d-xl-inline d-lg-inline d-md-inline d-sm-none" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+
+          </div>
+
+        </div>
+        <div class="col-auto">
+         <div class="back  d-flex justify-center">
+          <i class="fa fa-chevron-left active" aria-hidden="true"></i>
+
+          <i class="fa fa-chevron-right active" aria-hidden="true"></i>
+         </div>
+        </div>
+
+
+      </div>
+    </div>
+   </div>
+    <div class="d-flex">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="top_top">
+                  <div class="row ">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 ">
+                      <div class="card card_rem" style="width: 18rem;">
+                        <img src="./images/001.png" class="card-img-top" alt="jpg">
+                        <div class="card-body">
+                          <h5 class="card-title">рубашка белая</h5>
+                          <p class="card-text">$30.00</p>
+                          <button type="button" class="btn btn-danger RR">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                      <div class="card card_rem" style="width: 18rem;">
+                        <img src="./images/001.png" class="card-img-top" alt="jpg">
+                        <div class="card-body">
+                          <h5 class="card-title">рубашка белая</h5>
+                          <p class="card-text">$30.00</p>
+                          <button type="button" class="btn btn-danger RR">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                      <div class="card card_rem d-none d-xl-flex d-lg-flex d-md-flex d-sm-none" style="width: 18rem;">
+                        <img src="./images/001.png" class="card-img-top" alt="jpg">
+                        <div class="card-body">
+                          <h5 class="card-title">рубашка белая</h5>
+                          <p class="card-text">$30.00</p>
+                          <button type="button" class="btn btn-danger RR">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                      <div class="card card_rem d-none d-xl-flex d-lg-flex d-md-flex d-sm-none" style="width: 18rem;">
+                        <img src="./images/001.png" class="card-img-top" alt="jpg">
+                        <div class="card-body">
+                          <h5 class="card-title">рубашка белая</h5>
+                          <p class="card-text">$30.00</p>
+                          <button type="button" class="btn btn-danger RR">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+                
+               
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <!-- <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div> -->
+               
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <!-- <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+            </div> -->
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <!-- <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png">
+              </div>
+              <div class="blog">
+                <img src="./images/background.png" alt="png"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section_bottom ">
+      <div class="container">
+        <div class="row justify-between">
+          <div class="col-4">
+            <hr class="section_hr">
+          </div>
+          <div class="col-4">
+            <img class="img_gal" src="./images/galichka.png" alt="png">
+          </div>
+          <div class="col-4">
+            <hr class="section_hr">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card align-center" style="width: 18rem;">
+              <img src="./images/001.png" class="card-img-top" alt="png">
+              <div class="card-body">
+                <h5 class="card-title">рубашка белая</h5>
+                <p class="card-text">$30.00</p>
+                <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card align-center" style="width: 18rem;">
+              <img src="./images/001.png" class="card-img-top" alt="png">
+              <div class="card-body">
+                <h5 class="card-title">рубашка белая</h5>
+                <p class="card-text">$30.00</p>
+                <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card align-center d-none d-xl-flex d-lg-flex d-md-flex d-sm-none" style="width: 18rem;">
+              <img src="./images/001.png" class="card-img-top" alt="png">
+              <div class="card-body">
+                <h5 class="card-title">рубашка белая</h5>
+                <p class="card-text">$30.00</p>
+                <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="card align-center d-none d-xl-flex d-lg-flex d-md-flex d-sm-none" style="width: 18rem;">
+              <img src="./images/001.png" class="card-img-top" alt="png">
+              <div class="card-body ">
+                <h5 class="card-title">рубашка белая</h5>
+                <p class="card-text">$30.00</p>
+                <button type="button" class="btn btn-danger">КУПИТЬ СЕЙЧАС <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    
+    </div>
+    
+      <div class="section_bottom_bottom  d-none d-xl-bloke d-lg-blok d-md-block d-sm-none ">
+        <div class="after">
+          <h2>favourite brands</h2>
+        </div>
+        
+    <div class="container">
+      <div class="row justify-center">
+        <div class="col-11">
+          <div class="swiper-container mySwiper ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ">
+                <img src="./icon/car007.png" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car001.png" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car002.png" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car003.png" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car004.png" alt="logo">
+              </div>
+              <div class="swiper-slide"> 
+                <img src="./icon/car005.png" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car006.png" alt="logo">
+      
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car008.png" alt="logo">
+              </div>
+              <div class="swiper-slide">
+                <img src="./icon/car005.png" alt="logo">
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hr">
+      <div class="container">
+        <div class="row justify-center align-center">
+          <div class="col-10">
+            <h4> ПОДРОБНЕЕ О MANS SHOP</h4>
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+  </section>
+  <!-- starting footer    d-xl-inline d-md-inline d-sm-none-->
+  <footer>
+   <div class="footer_top d-xl-inline d-md-inline d-sm-none">
+    <div class="container">
+      <div class="row justify-between  ">
+        <div class="col-2 col-xl-2 col-lg-4 col-md-4 ">
+              <h4>Наш сервис</h4>
+              <p>Contact <br>
+                FAQ <br>
+                Terms of payment <br>
+                Terms of sale <br>    
+                Delivery terms <br> and conditions
+                Returns and Refunds</p>
+        </div>
+        <div class="col-2 col-xl-2 col-lg-4 col-md-4 ">
+          <h4>Информация</h4>
+          <p>Affiliate <br>
+            Cookies <br>
+            How to Shop <br>
+            About Nelly <br>
+            Investor relations</p>
+
+        </div>
+        <div class="col-2 col-xl-2 col-lg-4 col-md-4 ">
+          <h4>Компании </h4>
+          <p>Evening dresses
+            Makeup <br>
+            Fashion <br> forward <br>
+            training clothes
+            Special <br> Occasion Dresses
+            </p>
+
+        </div>
+        <div class="col-2 col-xl-2 col-lg-4 col-md-4 ">
+          <h4>История</h4>
+          <p>Paris <br>
+            New York <br>
+            London <br>
+            Madrid <br>
+            Tokio</p>
+        </div>
+        <div class="col-2 col-xl-2 col-lg-4 col-md-4 ">
+          <h4>Соц сети</h4>
+          <div class="icon">
+            <p>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            </p>   
+          </div>
+          <div class="icon">
+             <p>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i class="fa fa-tumblr" aria-hidden="true"></i>
+            <i class="fa fa-vimeo" aria-hidden="true"></i>
+          </p>
+          </div>
+        </div>
+        <div class="col-2 col-xl-2 col-lg-4 col-md-4 ">
+             <img src="./icon/index.png" alt="logo">
+        </div>
+      </div>
+    </div>
+   </div>
+    <div class="footer_middle d-xl-inline d-md-inline d-sm-none d-xs-none">
+      <div class="container">
+        <div class="row justify-between">
+          <div class="col-5 col-md-6">
+            <p class="p">Privacy & Cookies   |   Terms & Conditions   |   Accessibility   |   Store Directory   |   About Us
+            </p>
+          </div>
+          <div class="col-auto col-md-4">
+            <p class="p_p">© MensShop.com <br>
+              All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_tabs">
+      <div class="container">
+        <div class="row d-xl-none d-md-none d-sm-inline">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-ligh">
+              <div class="container-fluid">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand" href="#!">© MensShop.com <br>
+                  All Rights Reserved</a>
+               
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <p class="p">location <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                    </li>
+                    <li class="nav-item">
+                      <p class="p">instagram <i class="fa fa-instagram" aria-hidden="true"></i></p>
+                    </li>
+                    <li class="nav-item">
+                      <p class="p">Tell: +999 999 99 99</p>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <p class="p">Privacy & Cookies   |   Terms & Conditions   |   Accessibility   |   Store Directory   |   About Us
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- siwiper js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop:true,
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+</body>
+</html>

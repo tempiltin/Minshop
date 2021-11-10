@@ -1,0 +1,254 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* STARTING_ _ _ HEADER  */
+header .header_center{
+    width: 100%;
+    background: white;
+}
+header .header_center a{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #b0b0b0;
+}
+header .header_center h2{
+    font-size: 24px;
+    color: #b0b0b0; 
+}
+header .header_center h3{
+    font-size: 36px;
+    font-weight: 700; 
+    color: #000000;
+}
+header .header_center p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #b0b0b0;
+    padding-top: 35px; 
+}
+header .header_center .d-flex .btn-group .blok{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    background: black !important;
+}
+/*764102  */
+header .header_center .d-flex .btn-group button{
+    background: #e5e5e5 !important;
+    border: none !important;
+}
+header .header_center .d-flex .btn-secondary {
+    color: #6f4444;
+    background-color: #6c757d;
+    border-color: #0b0c0c;
+}
+header .header_center .btn-1-info{
+    border:none !important;
+    width: 29px;
+    height: 30px;
+}
+header .header_center .btn-1-info:nth-child(1){
+    background: #000000 !important;
+}
+header .header_center .btn-1-info:nth-child(2){
+    background: #764102 !important;
+}
+header .header_center .btn-1-info:nth-child(3){
+    background: #032571 !important;
+}
+header .header_center .btn-1-info:nth-child(4){
+    background: #968886 !important;
+}
+header .header_center .btn-1-info:nth-child(5){
+    background: #01591c !important;
+}
+header .header_center .plus button{
+    width: 46px;
+    height: 47px;
+    border: none;
+    color: white;
+}
+header .header_center .plus button:nth-child(1),
+header .header_center .plus button:nth-child(3){
+    background: black;
+}
+header .header_center .plus button:nth-child(2){
+  background: #6b6363;
+}
+header .header_center .plus .add{
+    color: white;
+    font-size: 14px;
+    width: 156px;
+    height: 47px;
+    background: #6b6363;
+    margin-left: 19px;
+}
+/*  header   icon_1__________________________________________ */
+header .icon_1 p i{
+    font-size: 24px;
+    padding: 15px 15px;
+    background: none;
+    color: #b8a9a4;
+    border: 2px solid #b8a9a4;
+    border-radius: 50%;
+
+}
+header .icon_1{
+    margin-bottom: 75px;
+}
+.header_center img{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ddd{
+    display: flex;
+    justify-content: center;
+}
+header .h33{
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b6363;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+/* section  ------------ */
+section{
+    background: white;
+}
+section .accardion_one{
+    width: 100%;
+    background: white;
+}
+section .accardion_one .accordion .accor_item {
+    width: 100% !important;
+    margin: 0 !important;
+    border: none;
+}
+section .accardion_one .accordion .ac_1  .accordion-button{
+    background: #8b8a8a;
+    color: white;
+}
+section .accardion_one .accordion .ac_2 .accordion-button{
+    background: #616161;
+    color: white;
+}
+section .accardion_one .accordion .ac_3  .accordion-button{
+    background: #4c4b4b;
+    color: white;
+}
+section .accardion_one .accordion .ac_4 .accordion-button{
+    background: #2c2c2c;
+    color: white;
+}
+section .accardion_one .accordion .ac_5 .accordion-button{
+    background: #000000;
+    color: white;
+}
+section .accardion_one  h5 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-top: 90px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+section .accardion_one  h5::after, section .accardion_one h5::before {
+    content: "";
+    width: 44%;
+    display: block;
+    height: 1px;
+    background: black;
+}
+.section_bottom_chooce{
+    width: 100%;
+}
+.section_bottom_chooce .card{
+    margin-bottom: 54px;
+}
+.section_bottom_chooce .card h5{
+    font-size: 18px;
+    font-weight: 400;
+    color: #373737;
+    text-align: center;
+}
+.section_bottom_chooce .card p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #373737;
+    text-align: center;
+}
+.section_bottom_chooce .card .kupit{
+    border: 2px solid black;
+    padding: 11px 4px 11px 11px;
+    background: #1f1f1f;
+    margin: auto;
+    color: white;   
+}
+.section_bottom_chooce .card .card-body{
+    padding: 0;
+}
+/* 
+media)))))))))))))))))))))))))^^^^^####
+ */
+@media (max-width:1200px){
+    header .header_center h2 {
+        font-size: 20px;
+        color: #b0b0b0;
+    }
+    header .header_center h3 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #000000;
+    }
+    header .header_center p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #b0b0b0;
+        padding-top: 22px;
+    }
+    footer img {
+        margin-top: 20px;
+        margin-left: -3px;
+    }
+    
+}
+@media (max-width:767px){
+
+    
+    .order_top{
+        order: 1 ;
+    }
+}
+@media (max-width:575px){
+    .btn-group, .btn-group-vertical {
+        margin-bottom: 20px !important;
+    }
+
+    .m-t-t{
+        margin-top: 20px;
+    }
+    .accordion{
+        margin-bottom: 20px !important;
+    }
+
+    
+}
+
+
